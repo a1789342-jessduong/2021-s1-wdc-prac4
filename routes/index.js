@@ -21,24 +21,25 @@ router.get('/last.txt', function(req, res) {
 });
 
 
+
+
 /* GET color page. */
+
+
+
 
 
 
 /* GET log page. */
 
 
-
 var currentTime = "";
 
 router.get('/log.html', function(req, res) {
 
-    currentTime = currentTime + "<br>" + new Date().toString();
+    currentTime = currentTime + "<br>" + (new Date().toString());
     res.send(currentTime);
 });
-
-
-
 
 module.exports = router;
 
