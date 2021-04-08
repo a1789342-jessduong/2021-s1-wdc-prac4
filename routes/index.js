@@ -29,13 +29,13 @@ router.get('/last.txt', function(req, res) {
 /* GET log page. */
 
 
-var currentTime = "";
+/*var currentTime = "";
 
 router.get('/log.html', function(req, res) {
 
     currentTime = currentTime + "<br>" + (new Date().toString());
     res.send(currentTime);
-});
+});*/
 
 module.exports = router;
 
