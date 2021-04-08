@@ -27,7 +27,6 @@ router.get('/last.txt', function(req, res) {
 
 
 
-
 /* GET log page. */
 
 
