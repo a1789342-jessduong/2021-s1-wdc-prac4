@@ -23,6 +23,30 @@ router.get('/last.txt', function(req, res) {
 
 /* GET color page. */
 
+var counter = 0;
+var colourz = ["Red","Yellow","Green","Blue"];
+
+router.get('/color.html', function(req, res) {
+    res.send(`
+    <DOCTYPE! html>
+    <html lang="en">
+
+    <h1 style = 'color:${colourz[counter]}'>${colourz[counter]}</h1>
+
+    </html>
+
+
+    `);
+
+
+    if (counter == 3){
+        counter = 0;
+    } else {
+    counter++;
+    }
+
+});
+
 
 
 
@@ -36,6 +60,9 @@ router.get('/log.html', function(req, res) {
     currentTime = currentTime + "<br>" + (new Date().toString());
     res.send(currentTime);
 });*/
+
+
+
 
 module.exports = router;
 
