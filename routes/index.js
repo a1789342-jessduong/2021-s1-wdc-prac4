@@ -8,9 +8,6 @@ var router = express.Router();
 
 
 router.get('/', function(req, res, next) {
-
-    date = new Date().toString();
-    res.send(date);
 });
 
 
