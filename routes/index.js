@@ -22,10 +22,6 @@ router.get('/last.txt', function(req, res) {
 
 
 /* GET color page. */
-router.get('/color.html', function(req, res, next) {
-
-
-});
 
 
 
