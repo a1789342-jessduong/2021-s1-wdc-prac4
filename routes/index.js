@@ -33,7 +33,7 @@ var currentTime = "";
 
 router.get('/log.html', function(req, res) {
 
-    currentTime = currentTime + "<br>" + (new Date().toString());
+    currentTime = currentTime + "<br>" + new Date().toString();
     res.send(currentTime);
 });
 
